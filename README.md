@@ -1,4 +1,4 @@
 # Seconde_semester
-A new project for the last part of our 
-Hello Ayman
-Hey Christian
+7 Pilotage d'un moteur pas-à-pas
+
+Project: 2 or 3 stepmotors maybe with a coordinate-system.
