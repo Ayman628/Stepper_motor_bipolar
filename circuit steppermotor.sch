@@ -1304,6 +1304,11 @@
 <sheets>
 <sheet>
 <plain>
+<circle x="27.94" y="76.2" radius="3.5921" width="0.1524" layer="91"/>
+<text x="27.94" y="81.28" size="1.524" layer="91">SM-17HS4023</text>
+<text x="12.7" y="88.9" size="1.524" layer="91">Steppermotor</text>
+<text x="-38.1" y="20.32" size="1.524" layer="91">Buttons</text>
+<text x="5.08" y="83.82" size="1.524" layer="91">-M1</text>
 </plain>
 <moduleinsts>
 <moduleinst name="L289N1" module="L289N" x="99.06" y="-2.54">
@@ -1337,13 +1342,11 @@
 <instance part="R4" gate="G$1" x="20.32" y="7.62" smashed="yes" rot="R90"/>
 <instance part="R5" gate="G$1" x="40.64" y="7.62" smashed="yes" rot="R90"/>
 <instance part="U2" gate="G$1" x="-109.22" y="-2.54" smashed="yes"/>
-<instance part="L1" gate="G$1" x="30.48" y="53.34" smashed="yes">
-<attribute name="NAME" x="30.48" y="55.88" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="30.48" y="50.8" size="1.778" layer="96" align="center"/>
+<instance part="L1" gate="G$1" x="27.94" y="68.58" smashed="yes">
+<attribute name="VALUE" x="27.94" y="66.04" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="L2" gate="G$1" x="5.08" y="53.34" smashed="yes">
-<attribute name="NAME" x="5.08" y="55.88" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="5.08" y="50.8" size="1.778" layer="96" align="center"/>
+<instance part="L2" gate="G$1" x="20.32" y="78.74" smashed="yes" rot="R270">
+<attribute name="VALUE" x="17.78" y="78.74" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -1463,39 +1466,16 @@
 <label x="-111.76" y="38.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="AP2-2" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="D2"/>
-<wire x1="-93.98" y1="27.94" x2="-93.98" y2="38.1" width="0.1524" layer="91"/>
-<label x="-93.98" y="38.1" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="AP3-2" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="D3"/>
-<wire x1="-96.52" y1="27.94" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
-<label x="-96.52" y="48.26" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="AP4-2" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="D4"/>
-<wire x1="-99.06" y1="27.94" x2="-99.06" y2="38.1" width="0.1524" layer="91"/>
-<label x="-99.06" y="38.1" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="AP5-2" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="D5"/>
-<wire x1="-101.6" y1="27.94" x2="-101.6" y2="48.26" width="0.1524" layer="91"/>
-<label x="-101.6" y="48.26" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="AP2" class="0">
 <segment>
 <portref moduleinst="L289N1" port="N1"/>
 <wire x1="86.36" y1="12.7" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
 <label x="86.36" y="17.78" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="D2"/>
+<wire x1="-93.98" y1="27.94" x2="-93.98" y2="38.1" width="0.1524" layer="91"/>
+<label x="-93.98" y="38.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="AP3" class="0">
@@ -1504,12 +1484,22 @@
 <wire x1="88.9" y1="12.7" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <label x="88.9" y="25.4" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="D3"/>
+<wire x1="-96.52" y1="27.94" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
+<label x="-96.52" y="48.26" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="AP4" class="0">
 <segment>
 <portref moduleinst="L289N1" port="N3"/>
 <wire x1="91.44" y1="12.7" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
 <label x="91.44" y="17.78" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="D4"/>
+<wire x1="-99.06" y1="27.94" x2="-99.06" y2="38.1" width="0.1524" layer="91"/>
+<label x="-99.06" y="38.1" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="AP5" class="0">
@@ -1518,33 +1508,10 @@
 <wire x1="93.98" y1="12.7" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
 <label x="93.98" y="25.4" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-</net>
-<net name="N$9" class="0">
 <segment>
-<portref moduleinst="L289N1" port="OUT1"/>
-<wire x1="104.14" y1="12.7" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
-<label x="104.14" y="17.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<portref moduleinst="L289N1" port="OUT3"/>
-<wire x1="109.22" y1="12.7" x2="109.22" y2="17.78" width="0.1524" layer="91"/>
-<label x="109.22" y="17.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<portref moduleinst="L289N1" port="OUT2"/>
-<wire x1="106.68" y1="12.7" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
-<label x="106.68" y="25.4" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<portref moduleinst="L289N1" port="OUT4"/>
-<wire x1="111.76" y1="12.7" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
-<label x="111.76" y="25.4" size="1.778" layer="95" rot="R90"/>
+<pinref part="U2" gate="G$1" pin="D5"/>
+<wire x1="-101.6" y1="27.94" x2="-101.6" y2="48.26" width="0.1524" layer="91"/>
+<label x="-101.6" y="48.26" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="12V_IN" class="0">
@@ -1587,6 +1554,68 @@
 <wire x1="40.64" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="0" y1="20.32" x2="0" y2="15.24" width="0.1524" layer="91"/>
 <label x="0" y="20.32" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="B-" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
+<label x="38.1" y="66.04" size="1.524" layer="95"/>
+<label x="35.56" y="60.96" size="1.524" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="L289N1" port="OUT2"/>
+<wire x1="106.68" y1="12.7" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<label x="106.68" y="25.4" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="B+" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="68.58" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<label x="25.4" y="66.04" size="1.524" layer="95"/>
+<label x="22.86" y="60.96" size="1.524" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="L289N1" port="OUT1"/>
+<wire x1="104.14" y1="12.7" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
+<label x="104.14" y="17.78" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="A-" class="0">
+<segment>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="71.12" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="71.12" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="22.86" y="71.12" size="1.524" layer="95"/>
+<label x="17.78" y="60.96" size="1.524" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="L289N1" port="OUT3"/>
+<wire x1="109.22" y1="12.7" x2="109.22" y2="17.78" width="0.1524" layer="91"/>
+<label x="109.22" y="17.78" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="A+" class="0">
+<segment>
+<pinref part="L2" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="83.82" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
+<label x="22.86" y="81.28" size="1.524" layer="95"/>
+<label x="12.7" y="60.96" size="1.524" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="L289N1" port="OUT4"/>
+<wire x1="111.76" y1="12.7" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
+<label x="111.76" y="25.4" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="10.16" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91" style="longdash"/>
+<wire x1="43.18" y1="63.5" x2="43.18" y2="86.36" width="0.1524" layer="91" style="longdash"/>
+<wire x1="43.18" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91" style="longdash"/>
+<wire x1="10.16" y1="86.36" x2="10.16" y2="63.5" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>
